@@ -1,0 +1,82 @@
+/* styles/DateSection.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.section {
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 90px;
+
+}
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    justify-self: center;
+  }
+  
+.h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-size: 300%;
+  }
+  
+  .daysOfWeek,
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+  
+  .daysOfWeek div,
+  .dates div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .dates div {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100%;
+  }
+  
+  .dates div:hover {
+    background-color: #e0e0e0;
+  }
+
+  .highlightedDate {
+    position: relative;
+    border: 2px solid #424242;
+  }
+  
+  
+  .highlightedDate::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
