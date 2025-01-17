@@ -7,6 +7,7 @@ import "./src/env.js";
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
+  basePath: '/wedding',
 
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
