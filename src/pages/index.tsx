@@ -64,7 +64,7 @@ const Index = () => {
     <div>
       <HeroSection />
       <DateSection selectedDate={selectedDate} />
-{/*       <VenueSection venues={venues} /> */}
+      <VenueSection venues={venues} /> 
       <ScheduleSection schedule={schedule} />
       <DressCodeSection colors={colors} /> 
       <RulesSection rules={rules} />
