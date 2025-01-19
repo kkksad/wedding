@@ -1,9 +1,9 @@
 // components/VenueSection.tsx
 import React from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 interface VenueSectionProps {
-  venues: string[];
+  venues: StaticImageData[];
 }
 
 const VenueSection: React.FC<VenueSectionProps> = ({ venues }) => {
@@ -11,7 +11,7 @@ const VenueSection: React.FC<VenueSectionProps> = ({ venues }) => {
     <section>
       <h2>Место</h2>
       <p>
-        Наше событие мы решили отметить в атмосферном ресторане "Siesta Fiesta" на Аптекарской набережной с изысканными итальянскими блюдами и игристым.
+        Наше событие мы решили отметить в атмосферном ресторане Siesta Fiesta на Аптекарской набережной с изысканными итальянскими блюдами и игристым.
       </p>
       <div>
         {venues.map((venue, index) => (
